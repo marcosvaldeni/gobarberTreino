@@ -9,6 +9,7 @@
     "dev": "yarn dev:server"
   },
   "dependencies": {
+    "date-fns": "^2.21.3",
     "express": "^4.17.1",
     "uuid": "^8.3.2"
   },
