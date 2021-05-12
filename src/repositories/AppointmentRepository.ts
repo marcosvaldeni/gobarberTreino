@@ -3,11 +3,6 @@ import { EntityRepository, Repository } from 'typeorm';
 
 import Appointment from '../models/Appointment';
 
-interface CreateAppointmentDTD {
-  provider: string;
-  date: Date;
-}
-
 @EntityRepository(Appointment)
 class AppointmentsRepository  extends Repository<Appointment>{
 
@@ -17,16 +12,7 @@ class AppointmentsRepository  extends Repository<Appointment>{
     });
 
     return findAppointment || null;
-  }
-
-  // public create({ provider, date }: CreateAppointmentDTD): Appointment {
-  //   const appointment = new Appointment({ provider, date });
-
-  //   this.appointments.push(appointment);
-
-  //   return appointment;
-  // }
-  
+  }  
 }
 
 export default AppointmentsRepository;

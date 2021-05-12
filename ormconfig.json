@@ -8,7 +8,7 @@
   "entities": [
     "./src/models/*.ts"
   ],
-  "migration": [
+  "migrations": [
     "./src/database/migrations/*.ts"
   ],
   "cli": {

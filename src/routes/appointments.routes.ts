@@ -32,7 +32,6 @@ appointmentRouter.post('/', async (req, res) => {
   } catch (err) {
     return res.status(400).json({ error: err.message });
   }
-
 });
 
 export default appointmentRouter;
