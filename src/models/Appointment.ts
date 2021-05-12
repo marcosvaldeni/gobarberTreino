@@ -14,7 +14,7 @@ class Appointment {
   @Column()
   provider: string;
 
-  @Column('timestamp with local time zone')
+  @Column('timestamp with time zone')
   date: Date;
   
   @CreateDateColumn()
@@ -22,12 +22,6 @@ class Appointment {
 
   @CreateDateColumn()
   updated_at: Date;
-
-  constructor({ provider, date }: Omit<Appointment, 'id'>) {
-    this.id = uuid();
-    this.provider = provider;
-    this.date = date;
-  }
 }
 
 export default Appointment;

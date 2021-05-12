@@ -5,6 +5,9 @@
   "username": "urrots",
   "password": "secret",
   "database": "treino",
+  "entities": [
+    "./src/models/*.ts"
+  ],
   "migration": [
     "./src/database/migrations/*.ts"
   ],
