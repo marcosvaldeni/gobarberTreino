@@ -4,5 +4,11 @@
   "post": 5432,
   "username": "urrots",
   "password": "secret",
-  "database": "treino"
+  "database": "treino",
+  "migration": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
