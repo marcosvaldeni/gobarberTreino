@@ -6,7 +6,7 @@
   "password": "secret",
   "database": "treino",
   "entities": [
-    "./src/modules/users/infra/typeorm/antities/*.ts"
+    "./src/modules/**/infra/typeorm/entities/*.ts"
   ],
   "migrations": [
     "./src/database/migrations/*.ts"
