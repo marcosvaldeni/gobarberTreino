@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import CreateAppointmentService from '@modules/appointments/services/CreateAppointmentService';
 import FakeAppointmentsRepository from '@modules/appointments/repositories/fakes/FakeAppointmentsRepository';
 
@@ -8,7 +9,7 @@ describe('CreateAppointment', () => {
       fakeAppointmentsRepository,
     );
 
-    const appointment = createAppointment.execute({
+    const appointment = await createAppointment.execute({
       date: new Date(),
       provider_id: '12312313213'
     });
