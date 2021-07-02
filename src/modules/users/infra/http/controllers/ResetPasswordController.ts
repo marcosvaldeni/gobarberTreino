@@ -15,7 +15,7 @@ export default class ResetPasswordController {
       password,
     });
 
-    return res.json({ password, token });
+    return res.status(204).json();
   }
 }
   
