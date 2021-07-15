@@ -4,6 +4,8 @@ export default class CreateAppointment1620813754341
   implements MigrationInterface {
 
   public async up(queryRunner: QueryRunner): Promise<void> {
+    console.log(1620813754341);
+    
     await queryRunner.createTable(
       new Table({
         name: 'appointments',

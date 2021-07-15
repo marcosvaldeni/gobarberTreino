@@ -3,6 +3,7 @@ import { MigrationInterface, QueryRunner, TableColumn, TableForeignKey } from 't
 export default class AddUserIdToAppointments1626010404840 implements MigrationInterface {
 
   public async up(queryRunner: QueryRunner): Promise<void> {
+    console.log(1626010404840);
     
     await queryRunner.addColumn(
       'appointments',

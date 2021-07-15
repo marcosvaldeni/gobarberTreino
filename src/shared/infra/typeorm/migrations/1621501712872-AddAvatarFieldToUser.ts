@@ -4,6 +4,8 @@ export default class AddAvatarFieldToUser1621501712872
   implements MigrationInterface {
 
   public async up(queryRunner: QueryRunner): Promise<void> {
+    console.log(1621501712872);
+    
     await queryRunner.addColumn(
       'users',
       new TableColumn({
