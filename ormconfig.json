@@ -1,11 +1,12 @@
 [
   {
+    "name": "default",
     "type": "postgres",
     "host": "localhost",
     "post": 5432,
     "username": "urrots",
     "password": "secret",
-    "database": "treino",
+    "database": "gobarber",
     "entities": [
       "./src/modules/**/infra/typeorm/entities/*.ts"
     ],

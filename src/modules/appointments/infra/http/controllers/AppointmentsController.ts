@@ -12,15 +12,12 @@ export default class AppointmentsController {
     const parsedDate = parseISO(date);
   
     const createAppointment = container.resolve(CreateAppointmentService);
-
-    console.log(`at conttroller ${provider_id}`);
-    
-  
+      
     const appointment = await createAppointment.execute({
       date: parsedDate,
       provider_id,
       user_id
-    });  
+    });
   
     return res.json(appointment);
   }

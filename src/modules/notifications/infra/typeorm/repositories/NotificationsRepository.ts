@@ -8,8 +8,8 @@ import Notification from '../schemas/Notification';
 class NotificationRepository implements INotificationsRepository {
   private ormRepository: MongoRepository<Notification>;
 
-  constructor() {
-    this.ormRepository = getMongoRepository(Notification);
+  constructor() {                      
+    this.ormRepository = getMongoRepository(Notification, 'mongo');
   }
 
   public async create({

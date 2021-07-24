@@ -1,5 +1,6 @@
-import { Column, CreateDateColumn, ObjectID, ObjectIdColumn, UpdateDateColumn } from 'typeorm';
+import { Column, CreateDateColumn, Entity, ObjectID, ObjectIdColumn, UpdateDateColumn } from 'typeorm';
 
+@Entity('notifications')
 class Notification {
   @ObjectIdColumn()
   id: ObjectID;
