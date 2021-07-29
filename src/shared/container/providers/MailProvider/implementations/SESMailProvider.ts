@@ -29,12 +29,12 @@ export default class SESMailProvider implements IMailProvider {
 
     await this.client.sendMail({
       from: {
-        name: name,
-        address: 'contact@marcosvaldeni.dev',
+        name: from?.name || name,
+        address: from?.email || email,
       },
       to: {
         name: to.name,
-        address: 'contact@marcosvaldeni.dev',
+        address: to.email,
       },
       subject,
       html: await this.mailTemplateProvider.parse(templateData),
