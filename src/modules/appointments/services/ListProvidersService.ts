@@ -23,11 +23,10 @@ class ListProvidersService {
     let users = await this.cacheProvider.recover<User[]>(
       `providers-list:${user_id}`
     );
-
-    console.log('The database query was made');
     
-
+    console.log('The database query was made');
     if (!users) {
+
       users = await this.usersRepository.findAllProviders({
         except_user_id: user_id
       });
