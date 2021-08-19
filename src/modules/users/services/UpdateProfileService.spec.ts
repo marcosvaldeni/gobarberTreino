@@ -58,7 +58,7 @@ describe('updateProfile', () => {
     })).rejects.toBeInstanceOf(AppError);
   });
 
-  it('should not be able to update the password', async () => {
+  it('should be able to update the password', async () => {
     const user = await fakeUsersRepository.create({
       name: 'John Locki',
       email: 'johnlocki@email.com',
